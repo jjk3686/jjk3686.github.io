@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+     <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -33,6 +33,26 @@
                 justify-content: space-between;
                 flex-wrap: wrap;
                 gap: 20px;
+            }
+
+            .projectbox {
+                background-color: black;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                border-radius: 15px;
+            }
+            .projectbox2 {
+                background-color: rgba(0, 0, 0, 0.685);
+                color: white;
+                padding: 20px;
+                text-align: center;
+                border-radius: 15px;
+            }
+            .inner-box {
+                background-color: white;
+                padding: 10px;
+                border-radius: 10px;
             }
 
             .rounded-image {
@@ -79,7 +99,8 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">about-me</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">skills</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#project">project</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -212,109 +233,78 @@
             
         </section>
         <!-- Contact Section-->
-        <section class="page-section" id="contact">
+        <section class="page-section" id="project">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">PROjects</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">projects</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon">📋</div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
-                    </div>
+                <div class="projectbox">
+                    <h3 class="text-center">USINSA-WEB</h3><br/>
+                    <img src="assets/img/project/main.PNG" style="width:100%">
+                  
+                    <br/>
+                    -메인 페이지-
+                    <br/><br/>
+
+                    <div class="inner-box", style="color: #000;">
+                        MUSINSA 웹사이트를 모방한 'USINSA 프로젝트'입니다. 고객들이 편리하게 상품을 검색하고 구매할 수 있는 공간으로, <br/>
+                        다양한 상품과 특별한 할인 이벤트를 제공하여 사용자들에게 최적의 쇼핑 경험을 제공하는 것이 목표였습니다.<br/>
+                        이 프로젝트를 진행하면서 대학교를 다닐때 부족하다고 느낀 JAVA를 Spring을 사용하여 많이 배우게 되었고<br/>
+                        또한 MySQL를 통해 JAVA 백엔드 서버와 연동하여 데이터 베이스에 대해 좀더 깊이 있게 알아갈 수 있었습니다.<br/>
+                        추가적으로 React를 이용하여 백엔드와 연결하고, CSS와 Bootstrap을 활용하여 사용자 편의성을 높였습니다.<br/><br/>
+                        <b>더 자세한 프로젝트 내용은 GitHub에 Readme를 참고해주시면 감사하겠습니다.</b>
+                    </div><br/>
+                    <h4>✔️ Git_hub 주소: <a href="https://github.com/jjk3686/usinsa-project.git">https://github.com/jjk3686/usinsa-project.git</a></h4>
+                    
+
+                </div>
+                <br/>
+                <div class="projectbox2">
+                    <h3 class="text-center">USINSA-APP</h3><br/>
+                    <img src="assets/img/project/appmain.PNG" style="width:30%; margin: 30px;">
+                    <img src="assets/img/project/appdetail.PNG" style="width:30%; margin: 30px;">
+                    <br/>
+                    -메인 페이지-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       -상품 상세-
+                    <br/><br/>
+
+                    <div class="inner-box", style="color: #000;">
+                        MUSINSA 웹사이트를 모방한 'USINSA 프로젝트'입니다. 고객들이 편리하게 상품을 검색하고 구매할 수 있는 공간으로, <br/>
+                        다양한 상품과 특별한 할인 이벤트를 제공하여 사용자들에게 최적의 쇼핑 경험을 제공하는 것이 목표였습니다.<br/>
+                        이 프로젝트를 진행하면서 대학교를 다닐때 부족하다고 느낀 JAVA를 Spring을 사용하여 많이 배우게 되었고<br/>
+                        또한 MySQL를 통해 JAVA 백엔드 서버와 연동하여 데이터 베이스에 대해 좀더 깊이 있게 알아갈 수 있었습니다.<br/>
+                        추가적으로 React를 이용하여 백엔드와 연결하고, CSS와 Bootstrap을 활용하여 사용자 편의성을 높였습니다.<br/><br/>
+                        <b>더 자세한 프로젝트 내용은 GitHub에 Readme를 참고해주시면 감사하겠습니다.</b>
+                    </div><br/>
+                    <h4>✔️ Git_hub 주소: <a href="https://github.com/jjk3686/usinsa-app-project.git">https://github.com/jjk3686/usinsa-app-project.git</a></h4>
+                    
+
                 </div>
             </div>
         </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
-                        </p>
+                  
+
+                <!-- About Section-->
+                <section class="page-section bg-primary text-white mb-0" id="contact">
+                    <div class="container">
+                        <!-- About Section Heading-->
+                        <h2 class="page-section-heading text-center text-uppercase text-white">contact</h2>
+                        <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon">🔗</div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        
+                        <h3 class="page-section-heading text-center  text-white">E-mail : jjk3686@gmail.com</h3>
+                        </div>
                     </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+                    
+                </section>
+
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Update 2023/08/24 </small></div>
@@ -331,3 +321,20 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // 이미지가 2초마다 바뀜
+    }
+  </script>
